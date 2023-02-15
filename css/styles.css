@@ -559,6 +559,10 @@ header {
   background: rgba(46, 47, 66, 0.4);
   
 }
+.is-hidden .modal_window{
+ transform:scale(0.5);
+ transition-duration: 250ms;
+}
 .modal_window{
   position: absolute;
   width: 408px;
@@ -568,17 +572,10 @@ header {
  background: #FCFCFC;
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 4px;
- animation-name: spin;
- animation-duration: 250ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+ transform:scale(1);
+ transition-duration: 250ms;
+ 
 }
-@keyframes spin {
-  0% {
-    transform: scale(1.5);
-  }
 }
 @keyframes sladge {
   0% {

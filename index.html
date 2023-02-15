@@ -20,7 +20,7 @@
             <nav class="navigation">
                 <ul class="references"> 
                     <a href="./index.html" class="logo"><b class="word_part_one"> WEB</b><b class="word_part_three">STUDIO</b></a>
-                    <li><a href="./index.html" class="references_part">Studio</a></li>
+                    <li><a href="./index.html" class="one_portfolio_one">Studio</a></li>
                     <li><a href="./portfolio.html" class="references_part">Portfolio</a></li>
                     <li><a href="" class="references_part">Contacts</a></li>
                 </ul>
@@ -39,7 +39,7 @@
               <div class="container solution_titel">
                     <h1 class="first_titel">Effective Solutions <br>
                     for Your Business</h1>
-                <button type="button" class="button2">Order Service</button>
+                <button type="button" class="button2" data-modal-open>Order Service</button>
               </div>
             </section> 
           
@@ -379,5 +379,18 @@
                 
            
         </footer>
+
+        <div data-modal class="backdrop is-hidden" >
+            <div class="modal_window">
+                <button class="close_button" type="button" data-modal-close>
+                    <svg class="button_svg" width="8" height="9">
+                    <use href="./symbol-defs.svg#icon-Vector"></use>
+                    </svg>
+
+                </button>
+            </div>
+            
+        </div>
+ <script src="./modal.js"></script>   
 </body>
 </html>

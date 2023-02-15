@@ -15,10 +15,13 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-style: normal;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .link_one:hover,
 .link_one:focus {
   color: #404BBF;
+  
 }
 .button1 {
    color: #4D5AE5;
@@ -27,12 +30,15 @@ body {
     line-height: 1.5em;
     font-family: 'Roboto';
     border-radius: 5%;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
 
 }
 button:focus,
 button:active,
 button:hover{
    background-color: #404BBF;
+   
    
 }
 .button2 
@@ -63,12 +69,16 @@ button {
   padding-left: 24px;
   border: none;
   cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .button1:hover, 
 .button1:focus {
   color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
 }
+
 .list {
   text-decoration: none;
   display: flex;
@@ -118,10 +128,13 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5em;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .references_part:hover,
  .references_part:focus {
   color: #404BBF;
+  
 }
 
 .footerd {
@@ -225,6 +238,7 @@ header {
 .references {
   display: flex;
   gap: 40px;
+  position: relative ;
 }
 .second_section {
   padding-top: 120px;
@@ -301,7 +315,9 @@ header {
 }
 .list_distance {
   border: 1px solid #E7E9FC;
-  max-width: 360px;
+  max-width: 360px; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .list_distance:is(:hover,:focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -359,6 +375,8 @@ header {
   height: 88px;
   fill: #8E8F99;
   display: block;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .ending_icons:hover,
@@ -368,6 +386,7 @@ header {
 .ending_icons:hover,
 .ending_icons:focus .ending_icon {
   fill:#404BBF ;
+  
 }
 
 .references_icon {
@@ -380,10 +399,13 @@ header {
    display: flex;
   background: #4D5AE5;
   border-radius: 50%;
-  display: block;
+  display: block; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .references_icon:is(:hover, :focus) {
   background: #404BBF;
+ 
 }
 .icon_row {
   display: flex;
@@ -433,13 +455,152 @@ header {
    display: flex;
    align-items: center;
    justify-content: center;
-   
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
   
 }
 
 .work_icon:hover,
 .work_icon:focus {
   background:#31D0AA;
+  
+}
+.one_portfolio {
+  text-decoration-color: #4D5AE5;
+   color: #2E2F42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  color: #404BBF;
+  
+}
+.one_portfolio::after {
+  content:'';
+  display: block;
+  background: #404BBF;
+  width: 66px;
+  height: 4px;
+  top: 45px;
+  border-radius: 2px;
+  position: absolute;
+}
+.one_portfolio_one {
+  text-decoration-color: #4D5AE5;
+   color: #2E2F42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  color: #404BBF;
+  
+}
+.one_portfolio_one::after {
+  content:'';
+  display: block;
+  background: #404BBF;
+  width: 66px;
+  height: 4px;
+  top: 45px;
+  left: 175px;
+  border-radius: 2px;
+  position: absolute;
+}
+.image_profile {
+  position: relative;
+  z-index: 1;
+}
+
+.hover_block:hover,
+.hover_block:focus {
+  opacity: 1;
+  animation-name: sladge;
+  animation-duration: 250ms;
+ animation-timing-function: linear;
+ animation-iteration-count: 1;
+}
+.hover_block{
+  position: absolute;
+  display: block;
+  background: #4D5AE5;
+  background-blend-mode: soft-light;
+  mix-blend-mode: normal; 
+  width: 360px;
+  min-height: 300px;
+  top: 0;
+  left: 0;
+  opacity:0 ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  z-index: 10;
+
+}
+.block_paragraph {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #F4F4FD;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 40px;
+   
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  
+}
+.modal_window{
+  position: absolute;
+  width: 408px;
+ height: 576px;
+ left: 516px;
+ top: 88px;
+ background: #FCFCFC;
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ border-radius: 4px;
+ animation-name: spin;
+ animation-duration: 250ms;
+ animation-timing-function: linear;
+ animation-iteration-count: 1;
+
+}
+@keyframes spin {
+  0% {
+    transform: scale(1.25);
+  }
+}
+@keyframes sladge {
+  0% {
+    transform: translate(0, 100%);
+  }
+}
+.close_button{
+  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 24px;
+  left: 360px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close_button:is(:hover, :focus) .button_svg {
+fill: white ;
 }
 html {
   box-sizing: border-box;

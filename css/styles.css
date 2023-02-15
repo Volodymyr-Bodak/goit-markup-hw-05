@@ -510,11 +510,10 @@ header {
 }
 .image_profile {
   position: relative;
-  z-index: 1;
+  overflow: hidden;
 }
 
-.hover_block:hover,
-.hover_block:focus {
+.list_distance:hover .hover_block{
   opacity: 1;
   animation-name: sladge;
   animation-duration: 250ms;
@@ -550,7 +549,6 @@ header {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
 }
 .backdrop{
   position: fixed;
@@ -579,7 +577,7 @@ header {
 }
 @keyframes spin {
   0% {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 }
 @keyframes sladge {

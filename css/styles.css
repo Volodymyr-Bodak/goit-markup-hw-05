@@ -546,8 +546,9 @@ header {
   line-height: 1.5em;
   color: #F4F4FD;
   letter-spacing: 0.02em;
-  text-align: center;
   margin-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
    
 }
 .backdrop.is-hidden {
